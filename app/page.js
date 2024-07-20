@@ -6,7 +6,7 @@ const Home = () => (
   <PageLayout>
     <>
       <HeroBanner />
-      <Auth0Features />
+      {/* <Auth0Features /> */}
     </>
   </PageLayout>
 );

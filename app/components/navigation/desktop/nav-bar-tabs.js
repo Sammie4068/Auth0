@@ -8,14 +8,15 @@ export const NavBarTabs = () => {
 
   return (
     <div className="nav-bar__tabs">
-      <NavBarTab path="/profile" label="Profile" />
-      <NavBarTab path="/public" label="Public" />
-      {user && (
+    {user && <NavBarTab path="/profile" label="Profile" />}
+      
+      {/* <NavBarTab path="/public" label="Public" /> */}
+      {/* {user && (
         <>
           <NavBarTab path="/protected" label="Protected" />
           <NavBarTab path="/admin" label="Admin" />
         </>
-      )}
+      )} */}
     </div>
   );
 };

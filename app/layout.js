@@ -2,12 +2,13 @@ import { UserProvider } from "@auth0/nextjs-auth0/client";
 import "./styles/styles.css";
 
 export const metadata = {
-  title: "Auth0 Next.js Sample",
-  description:
-    "Learn how to add user authentication to Next.js web apps easily.",
+  title: "Student Portal",
+  description: "Student portal with fingerprint authentication",
   themeColor: "#000000",
   icons: {
-    shortcut: ["https://cdn.auth0.com/website/new-homepage/dark-favicon.png"],
+    shortcut: [
+      "https://res.cloudinary.com/okorosamuel/image/upload/v1721476290/student-svgrepo-com_eb3o1c.svg",
+    ],
   },
 };
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <link
           rel="shortcut icon mask-icon"
-          href="https://cdn.auth0.com/website/auth0_favicon.svg"
+          href="https://res.cloudinary.com/okorosamuel/image/upload/v1721476290/student-svgrepo-com_eb3o1c.svg"
           color="#000000"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

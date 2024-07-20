@@ -13,12 +13,12 @@ export const MobileNavBarTabs = ({ handleClick }) => {
         label="Profile"
         handleClick={handleClick}
       />
-      <MobileNavBarTab
+      {/* <MobileNavBarTab
         path="/public"
         label="Public"
         handleClick={handleClick}
-      />
-      {user && (
+      /> */}
+      {/* {user && (
         <>
           <MobileNavBarTab
             path="/protected"
@@ -31,7 +31,7 @@ export const MobileNavBarTabs = ({ handleClick }) => {
             handleClick={handleClick}
           />
         </>
-      )}
+      )} */}
     </div>
   );
 };

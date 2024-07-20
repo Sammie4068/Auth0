@@ -1,7 +1,14 @@
+"use client"
+
 import Image from "next/image";
+import { useUser } from "@auth0/nextjs-auth0/client";
 
 export const HeroBanner = () => {
-  const logo = "https://cdn.auth0.com/blog/developer-hub/nextjs-logo.svg";
+   const { user } = useUser();
+  //  console.log(user)
+
+  const logo =
+    "https://res.cloudinary.com/okorosamuel/image/upload/v1721472360/student-portal-logo_blco2z.jpg";
 
   return (
     <div className="hero-banner hero-banner--pink-yellow">
@@ -9,25 +16,17 @@ export const HeroBanner = () => {
         <Image
           className="hero-banner__image"
           src={logo}
-          alt="Next.js logo"
+          alt="logo"
           height={108}
           width={108}
         />
       </div>
-      <h1 className="hero-banner__headline">Hello, Next.js World!</h1>
+      <h1 className="hero-banner__headline">Hello {user && user.nickname}</h1>
       <p className="hero-banner__description">
-        This is a sample application that demonstrates the authentication flow
-        for Next.js web apps using <strong>Auth0</strong>.
+        {user
+          ? "Welcome to the student portal"
+          : "login to access student portal"}
       </p>
-      <a
-        id="code-sample-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://developer.auth0.com/resources/code-samples/web-app/nextjs/basic-authentication"
-        className="button button--secondary"
-      >
-        Check out the Next.js code sample →
-      </a>
     </div>
   );
 };
