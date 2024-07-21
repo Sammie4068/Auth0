@@ -4,7 +4,7 @@ import "./styles/styles.css";
 export const metadata = {
   title: "Student Portal",
   description: "Student portal with fingerprint authentication",
-  themeColor: "#000000",
+  themeColor: "#f5f5f5",
   icons: {
     shortcut: [
       "https://res.cloudinary.com/okorosamuel/image/upload/v1721476290/student-svgrepo-com_eb3o1c.svg",
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <link
           rel="shortcut icon mask-icon"
           href="https://res.cloudinary.com/okorosamuel/image/upload/v1721476290/student-svgrepo-com_eb3o1c.svg"
-          color="#000000"
+          color="#f5f5f5"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

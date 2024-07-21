@@ -19,9 +19,9 @@ body {
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--light-aluminium);
 
-  color: var(--white);
+  color: #292E36;
   font-family: var(--font-primary);
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -39,7 +39,7 @@ h5,
 h6 {
   font-family: var(--font-secondary);
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.86);
+  color: #292E36
 }
 
 h1,

@@ -3,38 +3,52 @@ import { Auth0Feature } from "./auth0-feature";
 export const Auth0Features = () => {
   const featuresList = [
     {
-      title: "Identity Providers",
+      title: "Course Management",
       description:
-        "Auth0 supports social providers such as Google, Facebook, and Twitter, along with Enterprise providers such as Microsoft Office 365, Google Apps, and Azure. You can also use any OAuth 2.0 Authorization Server.",
-      resourceUrl: "https://auth0.com/docs/connections",
-      icon: "https://cdn.auth0.com/blog/hello-auth0/identity-providers-logo.svg",
+        "The student portal offers course management tools including Course Enrollment for registering for classes and viewing schedules, Course Materials for accessing syllabi, lecture notes, and assignments, Assignment Submission for submitting assignments and checking due dates, and a section for viewing Grades and Feedback.",
+      resourceUrl: "/",
+      icon: "https://res.cloudinary.com/okorosamuel/image/upload/v1721543336/certificate-quality-award-education-medal-svgrepo-com_pyoq25.svg",
     },
     {
-      title: "Multi-Factor Authentication",
+      title: "Academic Resources",
       description:
-        "You can require your users to provide more than one piece of identifying information when logging in. MFA delivers one-time codes to your users via SMS, voice, email, WebAuthn, and push notifications.",
-      resourceUrl: "https://auth0.com/docs/multifactor-authentication",
-      icon: "https://cdn.auth0.com/blog/hello-auth0/mfa-logo.svg",
+        "Academic Resources include Library Access to digital resources like e-books and journals, and information about available Tutoring Services.",
+      resourceUrl: "/",
+      icon: "https://res.cloudinary.com/okorosamuel/image/upload/v1721543328/knowledge-book-education-learning-books-svgrepo-com_u3ttt4.svg",
     },
     {
-      title: "Attack Protection",
+      title: "Calendar and Scheduling",
       description:
-        "Auth0 can detect attacks and stop malicious attempts to access your application such as blocking traffic from certain IPs and displaying CAPTCHA. Auth0 supports the principle of layered protection in security that uses a variety of signals to detect and mitigate attacks.",
-      resourceUrl: "https://auth0.com/docs/attack-protection",
-      icon: "https://cdn.auth0.com/blog/hello-auth0/advanced-protection-logo.svg",
+        "The Calendar and Scheduling features offer an Academic Calendar showing important dates such as exam schedules and registration deadlines, and a Personal Calendar for managing personal schedules and reminders.",
+      resourceUrl: "/",
+      icon: "https://res.cloudinary.com/okorosamuel/image/upload/v1721543502/calendar-svgrepo-com_aq3j9o.svg",
     },
     {
-      title: "Serverless Extensibility",
+      title: "Financial Services",
       description:
-        "Actions are functions that allow you to customize the behavior of Auth0. Each action is bound to a specific triggering event on the Auth0 platform. Auth0 invokes the custom code of these Actions when the corresponding triggering event is produced at runtime.",
-      resourceUrl: "https://auth0.com/docs/actions",
-      icon: "https://cdn.auth0.com/blog/hello-auth0/private-cloud-logo.svg",
+        "Financial Services sections allow students to view and pay tuition fees, check account balances, access payment history, apply for Financial Aid, and view financial aid awards.",
+      resourceUrl: "/",
+      icon: "https://res.cloudinary.com/okorosamuel/image/upload/v1721545382/financial-education_wj9tci.png",
+    },
+    {
+      title: "Campus Life",
+      description:
+        "Campus Life information includes details on joining student clubs and organizations, viewing events, managing on-campus housing, viewing dining options, and checking meal plan balances.",
+      resourceUrl: "/",
+      icon: "https://res.cloudinary.com/okorosamuel/image/upload/v1721545986/university-campus-svgrepo-com_vnj3at.svg",
+    },
+    {
+      title: "Support Services",
+      description:
+        "Support Services offer Technical Support for resolving portal-related issues, and information about Health and Wellness programs, including campus health services and counseling.",
+      resourceUrl: "/",
+      icon: "https://res.cloudinary.com/okorosamuel/image/upload/v1721546006/support-online-center-svgrepo-com_xxqypw.svg",
     },
   ];
 
   return (
     <div className="auth0-features">
-      <h2 className="auth0-features__title">Explore Auth0 Features</h2>
+      <h2 className="auth0-features__title">Explore Student Features</h2>
       <div className="auth0-features__grid">
         {featuresList.map((feature) => (
           <Auth0Feature

@@ -10,9 +10,29 @@ export const HeroBanner = () => {
   const logo =
     "https://res.cloudinary.com/okorosamuel/image/upload/v1721472360/student-portal-logo_blco2z.jpg";
 
+   
+
   return (
-    <div className="hero-banner hero-banner--pink-yellow">
-      <div className="hero-banner__logo">
+    <div className="hero-banner hero-banner--blue-aqua">
+      <div className="hero-writeup">
+        <h2>Welcome to the Student Portal</h2>
+        <p>
+          we believe in fostering a nurturing and inclusive environment where
+          every student can thrive. Our dedicated faculty and comprehensive
+          curriculum are designed to inspire and challenge students, preparing
+          them for success in academics and beyond.
+        </p>
+      </div>
+      <div className="hero-image">
+        <img
+          className="hero-banner__image"
+          src={
+            "https://res.cloudinary.com/okorosamuel/image/upload/v1721538735/students-image_ozvxef.webp"
+          }
+          alt="hero"
+        />
+      </div>
+      {/* <div className="hero-banner__logo">
         <Image
           className="hero-banner__image"
           src={logo}
@@ -26,7 +46,7 @@ export const HeroBanner = () => {
         {user
           ? "Welcome to the student portal"
           : "login to access student portal"}
-      </p>
+      </p> */}
     </div>
   );
 };

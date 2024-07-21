@@ -30,7 +30,7 @@
 }
 
 .button--primary {
-  background-color: var(--indigo);
+  background-color: var(--blue-aqua-gradient);
 }
 
 .button--primary:hover {
@@ -46,34 +46,15 @@
   background: rgba(255, 255, 255, 0.85);
 }
 
-@media only screen and (max-width: 480px) {
-  .button {
-    /* responsive */
 
-    min-width: 0.8rem;
-    padding: 1rem 1.2rem;
-
-    font-size: 1.3rem;
-    line-height: 2.2rem;
-  }
-
-  .button--compact {
-    /* responsive */
-
-    padding: 0.6rem 1rem;
-
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-}
 
 .button__login,
 .button__logout {
   min-width: 8.4rem;
 
-  border: 0.1rem solid var(--indigo);
+  border: 0.1rem solid var(--blue-aqua-gradient);
   color: var(--white);
-  background: var(--indigo);
+  background: var(--blue-aqua-gradient);
   width: 50%;
   font-size: 1.6rem;
 
@@ -93,11 +74,31 @@
   transition: background 0.3s ease-out, color 0.3s ease-out;
 }
 
+.button__save {
+  width: 20%;
+   border: 0.1rem solid var(--blue-aqua-gradient);
+  color: var(--white);
+  background: var(--blue-aqua-gradient);
+  font-size: 1.6rem;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.2rem;
+  padding: 0.8rem 0;
+  border-radius: 0.8rem;
+  text-align: center;
+
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+  align-self: flex-end;
+}
+
 .button__sign-up {
   min-width: 8.4rem;
 
-  border: 0.1rem solid var(--white);
-  color: var(--white);
+  border: 0.1rem solid var(--text-color);
+  color: var(--text-color);
   background-color: transparent;
   width: 50%;
   font-size: 1.6rem;
@@ -129,5 +130,31 @@
 
     font-size: 1.4rem;
     line-height: 1.6rem;
+  }
+
+  
+}
+@media only screen and (max-width: 480px) {
+  .button {
+    /* responsive */
+
+    min-width: 0.8rem;
+    padding: 1rem 1.2rem;
+
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+
+  .button--compact {
+    /* responsive */
+
+    padding: 0.6rem 1rem;
+
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .button__save {
+    width: 100%;
   }
 }

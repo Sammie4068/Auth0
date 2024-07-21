@@ -4,20 +4,32 @@ import { PageFooterHyperlink } from "./page-footer-hyperlink";
 export const PageFooter = () => {
   const resourceList = [
     {
-      path: "https://auth0.com/why-auth0/",
-      label: "Why Auth0",
+      path: "/",
+      label: "Home",
     },
     {
-      path: "https://auth0.com/docs/get-started",
-      label: "How It Works",
+      path: "/",
+      label: "About Us",
     },
     {
-      path: "https://auth0.com/blog/developers/",
-      label: "Developer Blog",
+      path: "/",
+      label: "Academic Calendar",
     },
     {
-      path: "https://auth0.com/contact-us",
-      label: "Contact an Expert",
+      path: "/",
+      label: "Course Catalog",
+    },
+    {
+      path: "/",
+      label: "Admissions",
+    },
+    {
+      path: "/",
+      label: "Career Services",
+    },
+    {
+      path: "/",
+      label: "Student Support Services",
     },
   ];
 
@@ -26,12 +38,9 @@ export const PageFooter = () => {
       <div className="page-footer-grid">
         <div className="page-footer-grid__info">
           <div className="page-footer-info__message">
-            {/* <p className="page-footer-message__headline">
-              <span>This sample application is brought to you by&nbsp;</span>
-              <PageFooterHyperlink path="https://auth0.com/">
-                Auth0
-              </PageFooterHyperlink>
-            </p> */}
+            <p className="page-footer-message__headline">
+              <span>Beware that activitie on this portal is being monitored for security reasons</span>
+            </p>
             {/* <p className="page-footer-message__description">
               <PageFooterHyperlink path="https://auth0.com/docs/quickstarts/">
                 <span>
@@ -54,7 +63,7 @@ export const PageFooter = () => {
             </a> */}
           </div>
           <div className="page-footer-info__resource-list">
-            {/* {resourceList.map((resource) => (
+            {resourceList.map((resource) => (
               <div
                 key={resource.path}
                 className="page-footer-info__resource-list-item"
@@ -63,23 +72,10 @@ export const PageFooter = () => {
                   {resource.label}
                 </PageFooterHyperlink>
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
-        <div className="page-footer-grid__brand">
-          {/* <div className="page-footer-brand">
-            <Image
-              className="page-footer-brand__logo"
-              src="https://cdn.auth0.com/blog/hello-auth0/auth0-shield.svg"
-              alt="Auth0"
-              width="20"
-              height="22"
-            />
-            <PageFooterHyperlink path="https://auth0.com/">
-              Auth0 Inc
-            </PageFooterHyperlink>
-          </div> */}
-        </div>
+        
       </div>
     </footer>
   );

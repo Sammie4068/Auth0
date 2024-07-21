@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
+Link
 
 export const Auth0Feature = ({ title, description, resourceUrl, icon }) => (
-  <a
+  <Link
     href={resourceUrl}
     className="auth0-feature"
-    target="_blank"
+    // target="_blank"
     rel="noopener noreferrer"
   >
     <h3 className="auth0-feature__headline">
@@ -18,5 +20,5 @@ export const Auth0Feature = ({ title, description, resourceUrl, icon }) => (
       {title}
     </h3>
     <p className="auth0-feature__description">{description}</p>
-  </a>
+  </Link>
 );

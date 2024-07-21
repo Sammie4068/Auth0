@@ -1,12 +1,13 @@
+import Link from "next/link";
+
 export const PageFooterHyperlink = ({ children, path }) => {
   return (
-    <a
+    <Link
       className="page-footer__hyperlink"
       href={path}
-      target="_blank"
       rel="noopener noreferrer"
     >
       {children}
-    </a>
+    </Link>
   );
 };
