@@ -3,15 +3,16 @@
 import React, { useRef, useEffect, useState } from "react";
 
 import { useUser } from "@auth0/nextjs-auth0/client";
-import { CodeSnippet } from "../components/code-snippet";
 import { PageLayout } from "../components/page-layout";
 import Image from "next/image";
-import ProfileInput from "../components/ProfileInput";
+// import ProfileInput from "../components/ProfileInput";
+// import { redirect } from "next/navigation";
 
 const Profile = () => {
   const formRefs = useRef({});
   const [storedData, setStoredData] = useState({});
-
+  const [saving, setSaving] = useState(false)
+ 
   useEffect(() => {
     const storedSurname = localStorage.getItem("surname");
     const storedFirstName = localStorage.getItem("firstname");
@@ -57,7 +58,13 @@ const Profile = () => {
     localStorage.setItem("address", address);
     localStorage.setItem("phone", phone);
 
-    console.log("User info saved to localStorage!");
+    // console.log("User info saved to localStorage!");
+    setSaving(true);
+
+    setTimeout(() => {
+      setSaving(false);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 2000);
   };
 
   const defaultPicture =
@@ -175,7 +182,7 @@ const Profile = () => {
                 </div>
 
                 <div className="btn_wrapper">
-                  <button className="button__save">Save</button>
+                  <button className="button__save" disabled={saving}>{saving ? "Saving..." : "Save"}</button>
                 </div>
               </form>
             </div>

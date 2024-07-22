@@ -39,7 +39,7 @@ export const PageFooter = () => {
         <div className="page-footer-grid__info">
           <div className="page-footer-info__message">
             <p className="page-footer-message__headline">
-              <span>Beware that activitie on this portal is being monitored for security reasons</span>
+              <span>Beware that activities on this portal is being monitored for security reasons</span>
             </p>
             {/* <p className="page-footer-message__description">
               <PageFooterHyperlink path="https://auth0.com/docs/quickstarts/">
@@ -65,7 +65,7 @@ export const PageFooter = () => {
           <div className="page-footer-info__resource-list">
             {resourceList.map((resource) => (
               <div
-                key={resource.path}
+                key={resource.label}
                 className="page-footer-info__resource-list-item"
               >
                 <PageFooterHyperlink path={resource.path}>
