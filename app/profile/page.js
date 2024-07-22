@@ -5,8 +5,6 @@ import React, { useRef, useEffect, useState } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import { PageLayout } from "../components/page-layout";
 import Image from "next/image";
-// import ProfileInput from "../components/ProfileInput";
-// import { redirect } from "next/navigation";
 
 const Profile = () => {
   const formRefs = useRef({});
